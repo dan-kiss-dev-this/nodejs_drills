@@ -1,0 +1,21 @@
+{
+  "name": "nodejs_learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "prettier": "^1.17.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "eslint --ignore-path .gitignore .",
+    "cleanSource": "npm run pretest -- --fix",
+    "cleanUsingPrettier": "./node_modules/.bin/prettier --single-quote --trailing-comma es5 --print-width 80 --write --no-bracket-spacing **/*.js",
+    "pretty": "./node_modules/.bin/prettier --single-quote --trailing-comma es5 --print-width 80 --write --no-bracket-spacing **/*.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
