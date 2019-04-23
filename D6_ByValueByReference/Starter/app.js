@@ -1,9 +1,11 @@
 //pass by value
 function change(b) {
   b=2;
+  console.log(b);
 };
 
 var a =1
+change(a);
 
 console.log(a);
 
