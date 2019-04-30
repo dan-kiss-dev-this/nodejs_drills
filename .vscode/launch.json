@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/E2_FirstClassFunctionsArrays/Starter/app.js"
+            "program": "${workspaceFolder}/E3_EventEmitterPart1/Starter/app.js"
         }
     ]
 }
