@@ -1,14 +1,14 @@
-'use strict';
+// 'use strict';
 
-var EventEmitter = require('events');
+// var EventEmitter = require('events');
 
-module.exports = class Greetr extends EventEmitter {
-	constructor() {
-		super();
-		this.greeting = 'Hello World!';
-	}
+// module.exports = class Greetr extends EventEmitter {
+// 	constructor() {
+// 		super();
+// 		this.greeting = 'Hello World!';
+// 	}
 
-	greet(data) {
-		console.log(`${this.greeting}: ${data}`);
-	}
-}
+// 	greet(data) {
+// 		console.log(`${this.greeting}: ${data}`);
+// 	}
+// }
