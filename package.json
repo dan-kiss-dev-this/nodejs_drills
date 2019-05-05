@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "ejs": "^2.6.1",
     "eslint": "^5.16.0",
     "express": "^4.16.4",
     "prettier": "^1.17.0"
