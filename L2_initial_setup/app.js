@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 var user = process.env.DB_USER;
 var pass = process.env.DB_PASS;
 var setupController = require('./controllers/setupController');
+var apiController = require('./controllers/apiController');
 // remember to add a .env file to this directory with 
 // DB_USER=user
 // DB_PASS=somepass
@@ -19,6 +20,8 @@ mongoose.connect('mongodb+srv://'+user+':'+pass+'@cluster0-ygfoe.mongodb.net/tes
 
 // below we add in the endpoint to run the code 
 setupController(app);
+
+apiController(app);
 
 app.listen(port);
 
