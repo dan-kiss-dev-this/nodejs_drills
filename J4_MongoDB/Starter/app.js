@@ -1,10 +1,12 @@
 var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
+require('dotenv').config();
 
+var user = process.env.DB_USER;
+var pass = process.env.DB_PASS;
 
-
-mongoose.connect('mongodb://flowfast47@gmail.com:Dvh0n!iKH$*3@cluster0-ygfoe.mongodb.net/test?retryWrites=true');
+mongoose.connect('mongodb+srv://'+user+':'+pass+'@cluster0-ygfoe.mongodb.net/test?retryWrites=true', {useNewUrlParser: true});
 
 var Schema = mongoose.Schema;
 
@@ -18,7 +20,7 @@ var personSchema = new Schema({
 var Person = mongoose.model('Person', personSchema);
 
 var john = Person({
-  firstname: 'John',
+  firstname: 'John2',
   lastname: 'Doe',
   address: '555 Main St.'
 });
@@ -31,7 +33,7 @@ john.save(function(err) {
 });
 
 var jane = Person({
-  firstname: 'Jane',
+  firstname: 'Jane2',
   lastname: 'Doe',
   address: '555 Main St.'
 });
