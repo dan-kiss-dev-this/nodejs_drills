@@ -24,7 +24,7 @@ module.exports = function(app){
   });
 
   app.post('/api/todo', function(req, res){
-    if (req.boy.id) {
+    if (req.body.id) {
       Todos.findByIdAndUpdate(req.body.id, {
         todo: req.body.todo, 
         isDone: req.body.isDone,
